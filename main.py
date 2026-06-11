@@ -1,6 +1,7 @@
 import streamlit as st
 import pickle
 import requests
+import joblib
 
 API_KEY = '75a42dc73351b8a50ff1c712d36c4106'
 def fetch_movie_details(movie_id):
