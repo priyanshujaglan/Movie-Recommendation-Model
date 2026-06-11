@@ -50,12 +50,9 @@ st.set_page_config(
 
 # ---------------- LOAD DATA ----------------
 movies = pickle.load(open('movies.pkl', 'rb'))
-# st.write("Columns in movies.pkl:")
-# st.write(movies.columns.tolist())
 
-loaded = pickle.load(
-    open(r"C:\Users\vipri\OneDrive\Desktop\movie recommendation model\movies.pkl", "rb")
-)
+
+
 
 print(loaded.columns)
 similarity = pickle.load(open('similarity.pkl', 'rb'))
