@@ -55,7 +55,7 @@ movies = pickle.load(open('movies.pkl', 'rb'))
 
 
 
-similarity = pickle.load(open('similarity.pkl', 'rb'))
+similarity = joblib.load("simililarity.joblib")
 
 # ---------------- CUSTOM CSS ----------------
 st.markdown("""
