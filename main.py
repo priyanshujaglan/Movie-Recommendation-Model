@@ -54,7 +54,7 @@ movies = pickle.load(open('movies.pkl', 'rb'))
 
 
 
-print(loaded.columns)
+
 similarity = pickle.load(open('similarity.pkl', 'rb'))
 
 # ---------------- CUSTOM CSS ----------------
