@@ -1,7 +1,12 @@
 import streamlit as st
 import pickle
+import joblib
 import requests
 import joblib
+
+
+
+
 
 API_KEY = '75a42dc73351b8a50ff1c712d36c4106'
 def fetch_movie_details(movie_id):
@@ -51,11 +56,6 @@ st.set_page_config(
 
 # ---------------- LOAD DATA ----------------
 movies = pickle.load(open('movies.pkl', 'rb'))
-
-
-
-
-
 similarity = joblib.load("similarity.joblib")
 
 # ---------------- CUSTOM CSS ----------------
